@@ -1,14 +1,9 @@
 /* nav */
 .action-buttons {
-  /* display: block; */
-  /* position: sticky; */
+  display: block;
+  position: sticky;
+  bottom: 0;
 }
-/*
-@media (max-height: 500px) {
-  .action-buttons {
-    position: static;
-  }
-} */
 
 /* ul */
 .action-buttons-list {
@@ -76,4 +71,29 @@
 .action-item a:hover span.menu-icon,
 .action-item a:focus span.menu-icon {
   background-image: url("../assets/menu-icon-hover.svg");
+}
+
+@media screen and (min-width: 720px) {
+  .action-buttons {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: none;
+    height: 100vh;
+    float: left;
+  }
+
+  .action-buttons-list {
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 0;
+    height: 100vh;
+    border-right: 1px solid var(--lighter-gray);
+  }
+
+  .action-item {
+    width: 8rem;
+    height: 5rem;
+    /* border-bottom: 1px solid var(--lighter-gray); */
+  }
 }
