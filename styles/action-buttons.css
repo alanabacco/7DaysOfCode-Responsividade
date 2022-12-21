@@ -1,0 +1,79 @@
+/* nav */
+.action-buttons {
+  /* display: block; */
+  /* position: sticky; */
+}
+/*
+@media (max-height: 500px) {
+  .action-buttons {
+    position: static;
+  }
+} */
+
+/* ul */
+.action-buttons-list {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 12px 12px 0 0;
+  background: var(--real-white);
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* li */
+.action-item {
+  width: 100%;
+  text-align: center;
+}
+
+.action-item a {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gray);
+  text-decoration: none;
+  padding: 1rem 0;
+}
+.action-item a:hover,
+.action-item a:focus {
+  color: var(--blue);
+}
+
+.action-item a span {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* icons */
+.action-item a .calendar-icon {
+  background-image: url("../assets/calendar-icon.svg");
+}
+.action-item a:hover .calendar-icon,
+.action-item a:focus .calendar-icon {
+  background-image: url("../assets/calendar-icon-hover.svg");
+}
+.action-item a span.clients-icon {
+  background-image: url("../assets/clients-icon.svg");
+}
+.action-item a:hover span.clients-icon,
+.action-item a:focus span.clients-icon {
+  background-image: url("../assets/clients-icon-hover.svg");
+}
+.action-item a span.report-icon {
+  background-image: url("../assets/report-icon.svg");
+}
+.action-item a:hover span.report-icon,
+.action-item a:focus span.report-icon {
+  background-image: url("../assets/report-icon-hover.svg");
+}
+.action-item a span.menu-icon {
+  background-image: url("../assets/menu-icon.svg");
+}
+.action-item a:hover span.menu-icon,
+.action-item a:focus span.menu-icon {
+  background-image: url("../assets/menu-icon-hover.svg");
+}

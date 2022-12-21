@@ -1,0 +1,168 @@
+.appointments h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  overflow: hidden;
+  background: var(--real-white);
+  border-radius: 8px;
+  border: 1px solid var(--lighter-gray);
+  margin-bottom: 1rem;
+}
+.card:last-child {
+  margin-bottom: 2rem;
+}
+
+.card-line {
+  display: block;
+  border-bottom: 1px solid var(--lighter-gray);
+  width: 100%;
+}
+
+.pacient {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pic-name-container {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+.pacient-pic {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.patient-name {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.appointment-local-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.appointment-local-type p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+.pin-map-icon {
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../assets/pin-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.camera-icon {
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../assets/camera-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.appointment {
+  padding: 1rem;
+}
+
+.appointment p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.chat-button {
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 50%;
+  border-style: none;
+
+  background: #f6f6f6;
+  background-image: url("../assets/chat-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.button {
+  font-weight: 500;
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  padding: 1rem;
+}
+
+.videocall-button {
+  background: var(--orange);
+  color: var(--real-white);
+}
+.videocall-button:hover {
+  opacity: 0.95;
+}
+.audiocall-button {
+  background: var(--real-white);
+  border: 1px solid var(--lighter-gray);
+}
+.audiocall-button:hover {
+  background: var(--white);
+}
+.see-adress-button {
+  background: var(--blue);
+  color: var(--real-white);
+}
+.see-adress-button:hover {
+  opacity: 0.95;
+}
+
+@media screen and (min-width: 720px) {
+  .new-appointment-button {
+    right: 5rem;
+    bottom: 3rem;
+  }
+
+  .cards {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .card {
+    min-width: 48%;
+    max-width: 48%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .card {
+    min-width: 46%;
+    max-width: 46%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    min-width: 30%;
+    max-width: 30%;
+  }
+}

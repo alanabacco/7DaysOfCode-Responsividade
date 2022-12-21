@@ -1,0 +1,23 @@
+.doctor-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.doctor-infos h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+
+.doctor-pic {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.doctor-infos p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
