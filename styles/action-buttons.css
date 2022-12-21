@@ -78,9 +78,9 @@
     position: fixed;
     left: 0;
     top: 0;
-    bottom: none;
-    height: 100vh;
-    float: left;
+    /* height: 100vh; */
+    /* bottom: none; */
+    /* float: left; */
   }
 
   .action-buttons-list {
@@ -92,8 +92,14 @@
   }
 
   .action-item {
+    width: 6.5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .action-item {
     width: 8rem;
     height: 5rem;
-    /* border-bottom: 1px solid var(--lighter-gray); */
   }
 }

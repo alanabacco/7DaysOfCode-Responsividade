@@ -10,9 +10,12 @@
 
 @media screen and (min-width: 720px) {
   .main-container {
-    margin: 3rem 5rem 0 12rem;
+    margin: 3rem 2rem 0 10rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .main-container {
+    margin: 3rem 4rem 0 12rem;
+  }
 }

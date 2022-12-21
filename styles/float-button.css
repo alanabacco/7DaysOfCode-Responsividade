@@ -16,9 +16,34 @@
   border-radius: 50%;
 }
 
+.new-appointment-text {
+  display: none;
+}
+
 @media screen and (min-width: 720px) {
   .new-appointment-button {
-    right: 5rem;
-    bottom: 3rem;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+
+    width: 9rem;
+    height: 3.5rem;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .new-appointment-text {
+    display: block;
+    font-size: 0.8rem;
+  }
+  .new-appointment-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .new-appointment-button {
+    right: 5.7rem;
   }
 }

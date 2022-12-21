@@ -157,6 +157,7 @@
   .card {
     min-width: 45.5%;
     max-width: 45.5%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
