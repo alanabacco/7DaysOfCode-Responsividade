@@ -135,10 +135,35 @@
   border-style: none;
   padding: 1rem;
   background: var(--orange);
-  color: white;
+  color: #fff;
   font-weight: 500;
 }
 .videocall-button:hover {
+  opacity: 0.95;
+}
+
+.audiocall-button {
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid var(--lighter-gray);
+  font-weight: 500;
+}
+.audiocall-button:hover {
+  background: var(--white);
+}
+.see-adress-button {
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  padding: 1rem;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 500;
+}
+.see-adress-button:hover {
   opacity: 0.95;
 }
 
@@ -240,7 +265,7 @@
   border-radius: 50%;
 }
 
-@media (min-width: 720px) {
+@media screen and (min-width: 600px) {
   .main-container {
     margin: 3rem 5rem 0;
   }
