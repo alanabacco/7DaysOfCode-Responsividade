@@ -3,12 +3,13 @@
 }
 
 :root {
-  --real-white: #fff;
-  --white: #f6f6f6;
+  --white: #fff;
+  --gray-1: #f6f6f6;
+  --gray-2: #cfcfcf;
+  --gray-3: #ececec;
+  --gray-4: #a3a3a3;
   --blue: #4894ff;
   --orange: #ffb050;
-  --gray: #a3a3a3;
-  --lighter-gray: #ececec;
 }
 
 html {

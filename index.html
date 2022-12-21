@@ -516,7 +516,7 @@
       <nav class="action-buttons">
         <ul class="action-buttons-list">
           <li class="action-item">
-            <a href="">
+            <a href="/">
               <span class="calendar-icon"></span>
               Consultas
             </a>
@@ -542,7 +542,10 @@
         </ul>
       </nav>
 
-      <button aria-hidden="true" class="new-appointment-button">
+      <button
+        onclick="window.location.href = './new-appointment.html'"
+        class="new-appointment-button"
+      >
         <span class="new-appointment-icon">+</span>
         <span class="new-appointment-text"> Nova consulta </span>
       </button>

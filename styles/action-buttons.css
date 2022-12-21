@@ -11,7 +11,7 @@
   justify-content: space-between;
 
   border-radius: 12px 12px 0 0;
-  background: var(--real-white);
+  background: var(--white);
   box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
 }
 
@@ -24,7 +24,7 @@
 .action-item a {
   display: block;
   font-size: 0.8rem;
-  color: var(--gray);
+  color: var(--gray-4);
   text-decoration: none;
   padding: 1rem 0;
 }
@@ -78,9 +78,6 @@
     position: fixed;
     left: 0;
     top: 0;
-    /* height: 100vh; */
-    /* bottom: none; */
-    /* float: left; */
   }
 
   .action-buttons-list {
@@ -88,7 +85,7 @@
     justify-content: start;
     border-radius: 0;
     height: 100vh;
-    border-right: 1px solid var(--lighter-gray);
+    border-right: 1px solid var(--gray-3);
   }
 
   .action-item {

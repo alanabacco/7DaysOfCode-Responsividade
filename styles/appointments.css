@@ -5,9 +5,9 @@
 
 .card {
   overflow: hidden;
-  background: var(--real-white);
+  background: var(--white);
   border-radius: 8px;
-  border: 1px solid var(--lighter-gray);
+  border: 1px solid var(--gray-3);
   margin-bottom: 1rem;
 }
 .card:last-child {
@@ -16,7 +16,7 @@
 
 .card-line {
   display: block;
-  border-bottom: 1px solid var(--lighter-gray);
+  border-bottom: 1px solid var(--gray-3);
   width: 100%;
 }
 
@@ -52,7 +52,7 @@
 }
 .appointment-local-type p {
   font-size: 0.8rem;
-  color: var(--gray);
+  color: var(--gray-4);
 }
 .pin-map-icon {
   width: 16px;
@@ -110,21 +110,21 @@
 
 .videocall-button {
   background: var(--orange);
-  color: var(--real-white);
+  color: var(--white);
 }
 .videocall-button:hover {
   opacity: 0.95;
 }
 .audiocall-button {
-  background: var(--real-white);
-  border: 1px solid var(--lighter-gray);
+  background: var(--white);
+  border: 1px solid var(--gray-3);
 }
 .audiocall-button:hover {
-  background: var(--white);
+  background: var(--gray-1);
 }
 .see-adress-button {
   background: var(--blue);
-  color: var(--real-white);
+  color: var(--white);
 }
 .see-adress-button:hover {
   opacity: 0.95;
