@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+
+    <title>Clínica Agenda</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="doctor-info">
+        <img src="./assets/perfil-1.jpg" alt="foto-perfil" class="doctor-pic" />
+        <div class="doctor-infos">
+          <h1>Olá, Sônia</h1>
+          <p>Mais 4 consultas hoje</p>
+        </div>
+      </section>
+
+      <section class="appointments">
+        <div class="day">
+          <h2>Hoje</h2>
+
+          <div class="card">
+            <div class="pacient">
+              <div class="pic-name-container">
+                <img src="./assets/perfil-3.jpg" alt="foto-perfil" class="pacient-pic" />
+                <div>
+                  <h3 class="patient-name">Luciana Dias</h3>
+                  <div class="appointment-local-type">
+                    <span aria-hidden="true" class="camera-icon"></span>
+                    <p>Consulta remota</p>
+                  </div>
+                </div>
+              </div>
+              <button class="chat-button" />
+            </div>
+
+            <span class="card-line"></span>
+
+            <div class="appointment">
+              <p>14:00 - 15:00 (1 hora)</p>
+              <div class="card-buttons">
+                <button class="videocall-button">Ligar por vídeo</button>
+                <button class="videocall-button">Ligar por áudio</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pacient">
+              <div class="pic-name-container">
+                <img src="./assets/perfil-3.jpg" alt="foto-perfil" class="pacient-pic" />
+                <div>
+                  <h3 class="patient-name">Luciana Dias</h3>
+                  <div class="appointment-local-type">
+                    <span aria-hidden="true" class="pin-map-icon"></span>
+                    <p>Consulta no local</p>
+                  </div>
+                </div>
+              </div>
+              <button class="chat-button" />
+            </div>
+
+            <span class="card-line"></span>
+
+            <div class="appointment">
+              <p>14:00 - 15:00 (1 hora)</p>
+              <div class="card-buttons">
+                <button class="videocall-button">Ver endereço</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h2>Amanhã</h2>
+
+          <div class="card">
+            <div class="pacient">
+              <div class="pic-name-container">
+                <img src="./assets/perfil-3.jpg" alt="foto-perfil" class="pacient-pic" />
+                <div>
+                  <h3 class="patient-name">Luciana Dias</h3>
+                  <div class="appointment-local-type">
+                    <span aria-hidden="true" class="camera-icon"></span>
+                    <p>Consulta remota</p>
+                  </div>
+                </div>
+              </div>
+              <button class="chat-button" />
+            </div>
+
+            <span class="card-line"></span>
+
+            <div class="appointment">
+              <p>14:00 - 15:00 (1 hora)</p>
+              <div class="card-buttons">
+                <button class="videocall-button">Ligar por vídeo</button>
+                <button class="videocall-button">Ligar por áudio</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="action-buttons">
+        <ul class="action-buttons-list">
+          <li class="action-item">
+            <a href="">
+              <span class="calendar-icon"></span>
+              Consultas
+            </a>
+          </li>
+          <li class="action-item">
+            <a href="">
+              <span class="clients-icon"></span>
+              Clientes
+            </a>
+          </li>
+          <li class="action-item">
+            <a href="">
+              <span class="report-icon"></span>
+              Relatórios
+            </a>
+          </li>
+          <li class="action-item">
+            <a href="">
+              <span class="menu-icon"></span>
+              Menu
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button aria-hidden="true" class="new-appointment-button">+</button>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+@import url("./global.css");
+
+.main-container {
+  margin: 2rem 1rem 0;
+}
+
+.doctor-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.doctor-infos h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+
+.doctor-pic {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.doctor-infos p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.appointments h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--lighter-gray);
+  margin-bottom: 1rem;
+}
+.card:last-child {
+  margin-bottom: 2rem;
+}
+
+.card-line {
+  display: block;
+  border-bottom: 1px solid var(--lighter-gray);
+  width: 100%;
+}
+
+.pacient {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pic-name-container {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+.pacient-pic {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.patient-name {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.appointment-local-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.appointment-local-type p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+.pin-map-icon {
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../assets/pin-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.camera-icon {
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../assets/camera-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chat-button {
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 50%;
+  border-style: none;
+
+  background: #f6f6f6;
+  background-image: url("../assets/chat-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.appointment {
+  padding: 1rem;
+}
+
+.appointment p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.videocall-button {
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  padding: 1rem;
+  background: var(--orange);
+  color: white;
+  font-weight: 500;
+}
+.videocall-button:hover {
+  opacity: 0.95;
+}
+
+/* nav */
+.action-buttons {
+  /* display: block; */
+  /* position: sticky; */
+}
+/*
+@media (max-height: 500px) {
+  .action-buttons {
+    position: static;
+  }
+} */
+
+/* ul */
+.action-buttons-list {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 12px 12px 0 0;
+  background: #ffffff;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* li */
+.action-item {
+  width: 100%;
+  text-align: center;
+}
+
+.action-item a {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gray);
+  text-decoration: none;
+  padding: 1rem 0;
+}
+.action-item a:hover,
+.action-item a:focus {
+  color: var(--blue);
+}
+
+.action-item a span {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* icons */
+.action-item a .calendar-icon {
+  background-image: url("../assets/calendar-icon.svg");
+}
+.action-item a:hover .calendar-icon,
+.action-item a:focus .calendar-icon {
+  background-image: url("../assets/calendar-icon-hover.svg");
+}
+.action-item a span.clients-icon {
+  background-image: url("../assets/clients-icon.svg");
+}
+.action-item a:hover span.clients-icon,
+.action-item a:focus span.clients-icon {
+  background-image: url("../assets/clients-icon-hover.svg");
+}
+.action-item a span.report-icon {
+  background-image: url("../assets/report-icon.svg");
+}
+.action-item a:hover span.report-icon,
+.action-item a:focus span.report-icon {
+  background-image: url("../assets/report-icon-hover.svg");
+}
+.action-item a span.menu-icon {
+  background-image: url("../assets/menu-icon.svg");
+}
+.action-item a:hover span.menu-icon,
+.action-item a:focus span.menu-icon {
+  background-image: url("../assets/menu-icon-hover.svg");
+}
+
+.new-appointment-button {
+  display: block;
+  position: fixed;
+  right: 1rem;
+  bottom: 3.5rem;
+
+  font-size: 2rem;
+  width: 3.3rem;
+  height: 3.3rem;
+
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.12);
+
+  border: none;
+  border-radius: 50%;
+}
+
+@media (min-width: 720px) {
+  .main-container {
+    margin: 3rem 5rem 0;
+  }
+
+  .new-appointment-button {
+    right: 5rem;
+    bottom: 3rem;
+  }
+}
