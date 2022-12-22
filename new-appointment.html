@@ -5,24 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
 
     <title>Clínica Agenda - Nova Consulta</title>
   </head>
   <body>
-    <main class="main-container">
-      <h1 class="form-title">Cadastro de nova consulta</h1>
-      <form action="./index.html" class="appointment-form">
-        <label class="input-label" for="pacient-name">Nome paciente:</label>
+    <main>
+      <h1 class="form__title">Cadastro de nova consulta</h1>
+      <form action="./index.html" class="form">
+        <label class="form__input--label" for="pacient-name">Nome paciente:</label>
         <input
-          class="input"
+          class="form__input"
           type="text"
           id="pacient-name"
           name="pacient-name"
@@ -30,8 +23,8 @@
           required
         />
 
-        <div class="appointment-types">
-          <label class="input-label">Tipo de consulta:</label>
+        <div class="form__input--appointment-types">
+          <label class="form__input--label">Tipo de consulta:</label>
           <div>
             <div>
               <input
@@ -58,9 +51,9 @@
           </div>
         </div>
 
-        <label class="input-label" for="appointment-date">Data da consulta:</label>
+        <label class="form__input--label" for="appointment-date">Data da consulta:</label>
         <input
-          class="input"
+          class="form__input"
           type="date"
           id="appointment-date"
           name="appointment-date"
@@ -69,9 +62,9 @@
           required
         />
 
-        <label class="input-label" for="appointment-time">Hora da consulta:</label>
+        <label class="form__input--label" for="appointment-time">Hora da consulta:</label>
         <input
-          class="input"
+          class="form__input"
           type="time"
           id="appointment-time"
           name="appointment-time"
@@ -79,9 +72,11 @@
           required
         />
 
-        <label class="input-label" for="appointment-observations"> Observações: </label>
+        <label class="form__input--label" for="appointment-observations">
+          Observações:
+        </label>
         <input
-          class="input observation-input"
+          class="form__input"
           placeholder="Observações"
           type="text"
           id="appointment-observations"
@@ -89,36 +84,36 @@
         />
 
         <input
-          class="button form-button"
+          class="button form__button"
           type="submit"
           name="new-appointment-submit"
           value="Cadastrar nova consulta"
         />
       </form>
 
-      <nav class="action-buttons">
-        <ul class="action-buttons-list">
-          <li class="action-item">
-            <a href="./index.html">
-              <span class="calendar-icon"></span>
+      <nav class="action-button__container">
+        <ul class="action-button__list">
+          <li class="action-button__item">
+            <a href="./index.html" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--calendar"></span>
               Consultas
             </a>
           </li>
-          <li class="action-item">
-            <a href="">
-              <span class="clients-icon"></span>
+          <li class="action-button__item">
+            <a href="" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--clients"></span>
               Clientes
             </a>
           </li>
-          <li class="action-item">
-            <a href="">
-              <span class="report-icon"></span>
+          <li class="action-button__item">
+            <a href="" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--report"></span>
               Relatórios
             </a>
           </li>
-          <li class="action-item">
-            <a href="">
-              <span class="menu-icon"></span>
+          <li class="action-button__item">
+            <a href="" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--menu"></span>
               Menu
             </a>
           </li>

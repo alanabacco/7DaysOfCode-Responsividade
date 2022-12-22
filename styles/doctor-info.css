@@ -5,19 +5,19 @@
   margin-bottom: 2rem;
 }
 
-.doctor-infos h1 {
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 2.3rem;
-}
-
-.doctor-pic {
+.doctor-info__pic {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
 }
 
-.doctor-infos p {
+.doctor-info__title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+
+.doctor-info__message {
   font-size: 0.9rem;
   color: var(--gray-4);
 }

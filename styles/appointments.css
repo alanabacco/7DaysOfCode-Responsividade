@@ -1,4 +1,4 @@
-.appointments h2 {
+.appointments__day {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -14,7 +14,7 @@
   margin-bottom: 2rem;
 }
 
-.card-line {
+.card__line {
   display: block;
   border-bottom: 1px solid var(--gray-3);
   width: 100%;
@@ -27,34 +27,35 @@
   padding: 1rem;
 }
 
-.pic-name-container {
+.pacient__pic-name-container {
   display: flex;
   align-items: end;
   gap: 1rem;
 }
 
-.pacient-pic {
+.pacient__pic {
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
 }
 
-.patient-name {
+.patient__name {
   line-height: 1.5rem;
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.appointment-local-type {
+.appointment__type {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.appointment-local-type p {
+.appointment__type--local {
   font-size: 0.8rem;
   color: var(--gray-4);
 }
-.pin-map-icon {
+
+.icon__pin-map {
   width: 16px;
   height: 16px;
 
@@ -62,7 +63,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.camera-icon {
+.icon__camera {
   width: 16px;
   height: 16px;
 
@@ -75,14 +76,13 @@
   padding: 1rem;
 }
 
-.appointment p {
+.appointment__time {
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
-/* Buttons */
-.chat-button {
+.pacient__chat-button {
   width: 2rem;
   height: 2rem;
 
@@ -95,48 +95,13 @@
   background-position: center;
 }
 
-.card-buttons {
-  display: flex;
-  gap: 1.1rem;
-}
-
-.button {
-  font-weight: 500;
-  width: 100%;
-  border-radius: 8px;
-  border-style: none;
-  padding: 1rem;
-}
-
-.videocall-button {
-  background: var(--orange);
-  color: var(--white);
-}
-.videocall-button:hover {
-  opacity: 0.95;
-}
-.audiocall-button {
-  background: var(--white);
-  border: 1px solid var(--gray-3);
-}
-.audiocall-button:hover {
-  background: var(--gray-1);
-}
-.see-adress-button {
-  background: var(--blue);
-  color: var(--white);
-}
-.see-adress-button:hover {
-  opacity: 0.95;
-}
-
 @media screen and (min-width: 720px) {
   .new-appointment-button {
     right: 5rem;
     bottom: 3rem;
   }
 
-  .cards {
+  .card__container {
     display: flex;
     gap: 2rem;
   }
@@ -148,7 +113,7 @@
 }
 
 @media screen and (min-width: 720px) {
-  .cards {
+  .card__container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;

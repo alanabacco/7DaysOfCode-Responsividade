@@ -5,537 +5,530 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
 
     <title>Clínica Agenda</title>
   </head>
   <body>
-    <main class="main-container">
+    <main>
       <section class="doctor-info">
-        <img src="./assets/perfil-1.jpg" alt="foto-perfil" class="doctor-pic" />
-        <div class="doctor-infos">
-          <h1>Olá, Sônia</h1>
-          <p>Mais 7 consultas hoje</p>
+        <img src="./assets/perfil-1.jpg" alt="foto-perfil" class="doctor-info__pic" />
+        <div>
+          <h1 class="doctor-info__title">Olá, Sônia</h1>
+          <p class="doctor-info__message">Mais 7 consultas hoje</p>
         </div>
       </section>
 
       <section class="appointments">
-        <div class="appointment-day">
-          <h2>Hoje</h2>
+        <div>
+          <h2 class="appointments__day">Hoje</h2>
 
-          <div class="cards">
+          <div class="card__container">
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-2.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Luciana Dias</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Luciana Dias</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>9:00 - 10:00 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-3.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Larissa Santana</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="pin-map-icon"></span>
-                      <p>Consulta no local</p>
+                    <h3 class="patient__name">Larissa Santana</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__pin-map"></span>
+                      <p class="appointment__type--local">Consulta no local</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>10:30 - 11:30 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button see-adress-button">Ver endereço</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--see-adress">Ver endereço</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-4.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Marcos Correia</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Marcos Correia</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>13:00 - 14:00 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-5.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Clara Lemos</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Clara Lemos</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__pin-map"></span>
+                      <p class="appointment__type--local">Consulta no local</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>14:10 - 15:10 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--see-adress">Ver endereço</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-2.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Luciana Dias</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="pin-map-icon"></span>
-                      <p>Consulta no local</p>
+                    <h3 class="patient__name">Luciana Dias</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>15:30 - 16:30 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button see-adress-button">Ver endereço</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-3.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Larissa Santana</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Larissa Santana</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>16:50 - 17:50 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-4.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Marcos Correia</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Marcos Correia</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__pin-map"></span>
+                      <p class="appointment__type--local">Consulta no local</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>18:00 - 19:00 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--see-adress">Ver endereço</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="appointment-day">
-          <h2>Amanhã</h2>
-
-          <div class="cards">
+        <div>
+          <h2 class="appointments__day">Amanhã</h2>
+          <div class="card__container">
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-5.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Clara Lemos</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Clara Lemos</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>8:00 - 9:00 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-2.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Luciana Dias</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="pin-map-icon"></span>
-                      <p>Consulta no local</p>
+                    <h3 class="patient__name">Luciana Dias</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__pin-map"></span>
+                      <p class="appointment__type--local">Consulta no local</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>9:20 - 10:20 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button see-adress-button">Ver endereço</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--see-adress">Ver endereço</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-3.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Larissa Santana</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Larissa Santana</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>10:40 - 11:40 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
+
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-4.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Marcos Correia</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Marcos Correia</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__pin-map"></span>
+                      <p class="appointment__type--local">Consulta no local</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>12:00 - 13:00 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--see-adress">Ver endereço</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-5.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Clara Lemos</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Clara Lemos</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>14:00 - 15:00 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-2.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Luciana Dias</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="pin-map-icon"></span>
-                      <p>Consulta no local</p>
+                    <h3 class="patient__name">Luciana Dias</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>15:20 - 16:20 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button see-adress-button">Ver endereço</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-3.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Larissa Santana</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="pin-map-icon"></span>
-                      <p>Consulta no local</p>
+                    <h3 class="patient__name">Larissa Santana</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__pin-map"></span>
+                      <p class="appointment__type--local">Consulta no local</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>16:30 - 17:30 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button see-adress-button">Ver endereço</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--see-adress">Ver endereço</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-4.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Marcos Correia</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Marcos Correia</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>17:30 - 18:30 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-5.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Clara Lemos</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="pin-map-icon"></span>
-                      <p>Consulta no local</p>
+                    <h3 class="patient__name">Clara Lemos</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>18:30 - 19:30 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button see-adress-button">Ver endereço</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="pacient">
-                <div class="pic-name-container">
+                <div class="pacient__pic-name-container">
                   <img
                     src="./assets/perfil-3.jpg"
                     alt="foto-perfil"
-                    class="pacient-pic"
+                    class="pacient__pic"
                   />
                   <div>
-                    <h3 class="patient-name">Larissa Santana</h3>
-                    <div class="appointment-local-type">
-                      <span aria-hidden="true" class="camera-icon"></span>
-                      <p>Consulta remota</p>
+                    <h3 class="patient__name">Larissa Santana</h3>
+                    <div class="appointment__type">
+                      <span aria-hidden="true" class="icon__camera"></span>
+                      <p class="appointment__type--local">Consulta remota</p>
                     </div>
                   </div>
                 </div>
-                <button class="chat-button" />
+                <button class="pacient__chat-button" />
               </div>
 
-              <span class="card-line"></span>
+              <span class="card__line"></span>
 
               <div class="appointment">
-                <p>19:40 - 20:40 (1 hora)</p>
-                <div class="card-buttons">
-                  <button class="button videocall-button">Ligar por vídeo</button>
-                  <button class="button audiocall-button">Ligar por áudio</button>
+                <p class="appointment__time">9:00 - 10:00 (1 hora)</p>
+                <div class="button__container">
+                  <button class="button button--videocall">Ligar por vídeo</button>
+                  <button class="button button--audiocall">Ligar por áudio</button>
                 </div>
               </div>
             </div>
@@ -543,29 +536,29 @@
         </div>
       </section>
 
-      <nav class="action-buttons">
-        <ul class="action-buttons-list">
-          <li class="action-item">
-            <a href="./index.html">
-              <span class="calendar-icon"></span>
+      <nav class="action-button__container">
+        <ul class="action-button__list">
+          <li class="action-button__item">
+            <a href="./index.html" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--calendar"></span>
               Consultas
             </a>
           </li>
-          <li class="action-item">
-            <a href="">
-              <span class="clients-icon"></span>
+          <li class="action-button__item">
+            <a href="" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--clients"></span>
               Clientes
             </a>
           </li>
-          <li class="action-item">
-            <a href="">
-              <span class="report-icon"></span>
+          <li class="action-button__item">
+            <a href="" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--report"></span>
               Relatórios
             </a>
           </li>
-          <li class="action-item">
-            <a href="">
-              <span class="menu-icon"></span>
+          <li class="action-button__item">
+            <a href="" class="action-button__item--link">
+              <span class="action-button__icon action-button__icon--menu"></span>
               Menu
             </a>
           </li>
@@ -574,10 +567,10 @@
 
       <button
         onclick="window.location.href = './new-appointment.html'"
-        class="new-appointment-button"
+        class="float-button"
       >
-        <span class="new-appointment-icon">+</span>
-        <span class="new-appointment-text"> Nova consulta </span>
+        <span class="float-button__icon">+</span>
+        <span class="float-button__text"> Nova consulta </span>
       </button>
     </main>
   </body>

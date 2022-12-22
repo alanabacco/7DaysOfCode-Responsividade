@@ -1,0 +1,34 @@
+.button__container {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.button {
+  font-weight: 500;
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  padding: 1rem;
+}
+
+.button--videocall {
+  background: var(--orange);
+  color: var(--white);
+}
+.button--videocall:hover {
+  opacity: 0.95;
+}
+.button--audiocall {
+  background: var(--white);
+  border: 1px solid var(--gray-3);
+}
+.button--audiocall:hover {
+  background: var(--gray-1);
+}
+.button--see-adress {
+  background: var(--blue);
+  color: var(--white);
+}
+.button--see-adress:hover {
+  opacity: 0.95;
+}

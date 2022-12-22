@@ -1,22 +1,49 @@
-@import url("./global.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import url("./reset.css");
 @import url("./doctor-info.css");
 @import url("./appointments.css");
+@import url("./button.css");
 @import url("./action-buttons.css");
 @import url("./float-button.css");
-@import url("./form-new-appointment.css");
+@import url("./form.css");
 
-.main-container {
+* {
+  transition: all 0.2s;
+}
+
+:root {
+  --white: #fff;
+  --gray-1: #f6f6f6;
+  --gray-2: #cfcfcf;
+  --gray-3: #ececec;
+  --gray-4: #a3a3a3;
+  --blue: #4894ff;
+  --orange: #ffb050;
+}
+
+main {
   margin: 2rem 1rem 0;
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+  color: #464646;
+  background: var(--gray-1);
+}
+
+button {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 720px) {
-  .main-container {
+  main {
     margin: 3rem 2rem 0 10rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .main-container {
+  main {
     margin: 3rem 4rem 0 12rem;
   }
 }

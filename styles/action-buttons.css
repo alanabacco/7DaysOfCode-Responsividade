@@ -1,12 +1,12 @@
 /* nav */
-.action-buttons {
+.action-button__container {
   display: block;
   position: sticky;
   bottom: 0;
 }
 
 /* ul */
-.action-buttons-list {
+.action-button__list {
   display: flex;
   justify-content: space-between;
 
@@ -16,24 +16,24 @@
 }
 
 /* li */
-.action-item {
+.action-button__item {
   width: 100%;
   text-align: center;
 }
 
-.action-item a {
+.action-button__item--link {
   display: block;
   font-size: 0.8rem;
   color: var(--gray-4);
   text-decoration: none;
   padding: 1rem 0;
 }
-.action-item a:hover,
-.action-item a:focus {
+.action-button__item--link:hover,
+.action-button__item--link:focus {
   color: var(--blue);
 }
 
-.action-item a span {
+.action-button__icon {
   display: block;
   margin: 0 auto 0.5rem auto;
   width: 1.5rem;
@@ -44,43 +44,43 @@
 }
 
 /* icons */
-.action-item a .calendar-icon {
+.action-button__item--link .action-button__icon--calendar {
   background-image: url("../assets/calendar-icon.svg");
 }
-.action-item a:hover .calendar-icon,
-.action-item a:focus .calendar-icon {
+.action-button__item--link:hover .action-button__icon--calendar,
+.action-button__item--link:focus .action-button__icon--calendar {
   background-image: url("../assets/calendar-icon-hover.svg");
 }
-.action-item a span.clients-icon {
+.action-button__item--link .action-button__icon--clients {
   background-image: url("../assets/clients-icon.svg");
 }
-.action-item a:hover span.clients-icon,
-.action-item a:focus span.clients-icon {
+.action-button__item--link:hover .action-button__icon--clients,
+.action-button__item--link:focus .action-button__icon--clients {
   background-image: url("../assets/clients-icon-hover.svg");
 }
-.action-item a span.report-icon {
+.action-button__item--link .action-button__icon--report {
   background-image: url("../assets/report-icon.svg");
 }
-.action-item a:hover span.report-icon,
-.action-item a:focus span.report-icon {
+.action-button__item--link:hover .action-button__icon--report,
+.action-button__item--link:focus .action-button__icon--report {
   background-image: url("../assets/report-icon-hover.svg");
 }
-.action-item a span.menu-icon {
+.action-button__item--link .action-button__icon--menu {
   background-image: url("../assets/menu-icon.svg");
 }
-.action-item a:hover span.menu-icon,
-.action-item a:focus span.menu-icon {
+.action-button__item--link:hover .action-button__icon--menu,
+.action-button__item--link:focus .action-button__icon--menu {
   background-image: url("../assets/menu-icon-hover.svg");
 }
 
 @media screen and (min-width: 720px) {
-  .action-buttons {
+  .action-button__container {
     position: fixed;
     left: 0;
     top: 0;
   }
 
-  .action-buttons-list {
+  .action-button__list {
     flex-direction: column;
     justify-content: start;
     border-radius: 0;
@@ -88,14 +88,14 @@
     border-right: 1px solid var(--gray-3);
   }
 
-  .action-item {
+  .action-button__item {
     width: 6.5rem;
     height: 5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .action-item {
+  .action-button__item {
     width: 8rem;
     height: 5rem;
   }
