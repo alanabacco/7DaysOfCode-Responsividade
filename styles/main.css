@@ -3,6 +3,7 @@
 @import url("./appointments.css");
 @import url("./action-buttons.css");
 @import url("./float-button.css");
+@import url("./form-new-appointment.css");
 
 .main-container {
   margin: 2rem 1rem 0;

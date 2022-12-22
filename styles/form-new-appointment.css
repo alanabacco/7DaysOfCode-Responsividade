@@ -54,6 +54,7 @@
   background: var(--blue);
   color: var(--white);
   margin-top: 1rem;
+  cursor: pointer;
 }
 .form-button:hover {
   opacity: 0.95;
