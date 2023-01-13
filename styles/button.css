@@ -9,24 +9,25 @@
   border-radius: 8px;
   border-style: none;
   padding: 1rem;
+  transition: opacity 0.2s, background-color 0.2s;
 }
 
 .button--videocall {
-  background: var(--orange);
+  background-color: var(--orange);
   color: var(--white);
 }
 .button--videocall:hover {
   opacity: 0.95;
 }
 .button--audiocall {
-  background: var(--white);
+  background-color: var(--white);
   border: 1px solid var(--gray-3);
 }
 .button--audiocall:hover {
-  background: var(--gray-1);
+  background-color: var(--gray-1);
 }
 .button--see-adress {
-  background: var(--blue);
+  background-color: var(--blue);
   color: var(--white);
 }
 .button--see-adress:hover {

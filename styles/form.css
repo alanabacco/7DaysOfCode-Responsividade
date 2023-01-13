@@ -26,6 +26,8 @@
   border: 1px solid var(--gray-3);
   outline: none;
   margin-bottom: 1rem;
+
+  transition: border 0.2s;
 }
 
 .form__input:hover {
@@ -38,6 +40,7 @@
 
 .form__input::placeholder {
   color: var(--gray-2);
+  transition: color 0.2s;
 }
 .form__input:hover::placeholder,
 .form__input:focus::placeholder {
@@ -51,7 +54,7 @@
 }
 
 .form__button {
-  background: var(--blue);
+  background-color: var(--blue);
   color: var(--white);
   margin-top: 1rem;
   cursor: pointer;

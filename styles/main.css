@@ -8,10 +8,6 @@
 @import url("./float-button.css");
 @import url("./form.css");
 
-* {
-  transition: all 0.2s;
-}
-
 :root {
   --white: #fff;
   --gray-1: #f6f6f6;
@@ -29,7 +25,7 @@ main {
 html {
   font-family: "Montserrat", sans-serif;
   color: #464646;
-  background: var(--gray-1);
+  background-color: var(--gray-1);
 }
 
 button {
