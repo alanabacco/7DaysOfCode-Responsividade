@@ -96,26 +96,16 @@
 }
 
 @media screen and (min-width: 720px) {
-  .new-appointment-button {
-    right: 5rem;
-    bottom: 3rem;
-  }
-
   .card__container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* A unidade fr representa uma fração do espaço disponível no container do grid. */
     gap: 2rem;
-  }
-
-  .card {
-    min-width: 45.5%;
-    max-width: 45.5%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
-    min-width: 30%;
-    max-width: 30%;
+  .card__container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
