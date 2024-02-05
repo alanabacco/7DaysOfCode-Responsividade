@@ -2,7 +2,8 @@
 
 ## 💻 Sobre o projeto
 
-Página de agenda de consultas de uma clínica feita apenas com HTML e CSS puro para treinar o layout responsivo das telas. <br />
+Página de agenda de consultas de uma clínica feita apenas com HTML e CSS puro para treinar o layout responsivo das telas.
+<br/> <br/>
 Com o [#7DaysOfCode - Responsividade](https://7daysofcode.io/matricula/responsividade) pude treinar e colocar em prática os conhecimentos, principalmente de CSS, em relação à responsividade com os diferentes tamanhos de telas dos dispositivos. A partir de um layout no Figma, foi usado conceitos como **Mobile First**, **media queries**, **unidades relativas** e **medidas responsivas** em CSS. Tirei um tempinho também para estudar o padrão **[BEM](https://getbem.com/)** do css, uma convenção de nomenclatura.
 
 <!--
@@ -24,7 +25,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [Visual Studio Code](https://code.visualstudio.com/)
-
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extensão do VS Code para executar o projeto localmente.
 
 ---
